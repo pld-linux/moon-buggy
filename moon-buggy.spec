@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(2755,root,games) %{_bindir}/*
 %{_infodir}/*
 %{_mandir}/man6/*
-%dir %attr(775,root,games) /var/games/moon-buggy
-%attr(664,root,games) /var/games/moon-buggy/*
+%attr(775,root,games) %dir /var/games/moon-buggy
+%attr(664,root,games) %ghost /var/games/moon-buggy/*
