@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Games
 Source0:	http://www.hangout.de/moon-buggy/%{name}-%{version}.tar.gz
 # Source0-md5:	1d081d3210c59b376f6a9f332aea1a04
-Patch0:		%{name}-what.patch
 URL:		http://www.hangout.de/moon-buggy/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -42,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+:> $RPM_BUILD_ROOT/var/games/moon-buggy/mbscore
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,3 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(2755,root,games) %{_bindir}/*
 %{_infodir}/*
 %{_mandir}/man6/*
+%dir %attr(775,root,games) /var/games/moon-buggy
+%attr(664,root,games) /var/games/moon-buggy/*
