@@ -1,14 +1,13 @@
 Summary:	Drive some car across the moon
 Summary(pl):	Jazda samochodem po ksiê¿ycu
 Name:		moon-buggy
-Version:	0.5.52
+Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://www.hangout.de/moon-buggy/%{name}-%{version}.tar.gz
-# Source0-md5:	1d081d3210c59b376f6a9f332aea1a04
-Patch0:		%{name}-info.patch
-URL:		http://www.hangout.de/moon-buggy/
+Source0:	http://seehuhn.de/data/%{name}-%{version}.tar.gz
+# Source0-md5:	4da97ea40eca686f6f8b164d8b927e38
+URL:		http://seehuhn.de/comp/moon-buggy.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
@@ -29,7 +28,6 @@ kratery. Na szczê¶cie samochód mo¿e przez nie przeskakiwaæ!
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %{__aclocal}
