@@ -1,0 +1,14 @@
+--- moon-buggy-0.5.52/moon-buggy.texi.orig	Wed Nov  1 14:13:43 2000
++++ moon-buggy-0.5.52/moon-buggy.texi	Fri Oct 24 15:41:27 2003
+@@ -6,9 +6,9 @@
+ @include version.texi
+ @c %**end of header
+ 
+-@dircategory Games
++@dircategory Games:
+ @direntry
+-* moon-buggy: (moon-buggy).     Drive some car across the moon
++* moon-buggy: (moon-buggy).		Drive some car across the moon
+ @end direntry
+ 
+ @ifinfo
