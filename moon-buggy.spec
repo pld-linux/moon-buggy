@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Games
 Source0:	http://seehuhn.de/data/%{name}-%{version}.tar.gz
 # Source0-md5:	4da97ea40eca686f6f8b164d8b927e38
+Patch0:		%{name}-info.patch
 URL:		http://seehuhn.de/comp/moon-buggy.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -28,6 +29,7 @@ kratery. Na szczê¶cie samochód mo¿e przez nie przeskakiwaæ!
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %{__aclocal}
