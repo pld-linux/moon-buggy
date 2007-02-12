@@ -1,5 +1,5 @@
 Summary:	Drive some car across the moon
-Summary(pl):	Jazda samochodem po ksiê¿ycu
+Summary(pl.UTF-8):   Jazda samochodem po ksiÄ™Å¼ycu
 Name:		moon-buggy
 Version:	1.0
 Release:	1
@@ -22,10 +22,10 @@ Moon-buggy is a simple character graphics game, where you drive some
 kind of car across the moon's surface. Unfortunately there are
 dangerous craters there. Fortunately your car can jump over them!
 
-%description -l pl
-Moon-buggy jest gr± tekstow±, w której je¼dzisz pewnym rodzajem
-samochodu po powierzchni ksiê¿yca. Niestety, s± tam niebezpieczne
-kratery. Na szczê¶cie samochód mo¿e przez nie przeskakiwaæ!
+%description -l pl.UTF-8
+Moon-buggy jest grÄ… tekstowÄ…, w ktÃ³rej jeÅºdzisz pewnym rodzajem
+samochodu po powierzchni ksiÄ™Å¼yca. Niestety, sÄ… tam niebezpieczne
+kratery. Na szczÄ™Å›cie samochÃ³d moÅ¼e przez nie przeskakiwaÄ‡!
 
 %prep
 %setup -q
