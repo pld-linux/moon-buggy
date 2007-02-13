@@ -1,5 +1,5 @@
 Summary:	Drive some car across the moon
-Summary(pl.UTF-8):   Jazda samochodem po księżycu
+Summary(pl.UTF-8):	Jazda samochodem po księżycu
 Name:		moon-buggy
 Version:	1.0
 Release:	1
