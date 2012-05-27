@@ -1,12 +1,12 @@
 Summary:	Drive some car across the moon
 Summary(pl.UTF-8):	Jazda samochodem po księżycu
 Name:		moon-buggy
-Version:	1.0
+Version:	1.0.51
 Release:	1
 License:	GPL
 Group:		Applications/Games
 Source0:	http://seehuhn.de/data/%{name}-%{version}.tar.gz
-# Source0-md5:	4da97ea40eca686f6f8b164d8b927e38
+# Source0-md5:	bfe23ef5cfa838ac261eee34ea5322f3
 Patch0:		%{name}-info.patch
 URL:		http://seehuhn.de/comp/moon-buggy.html
 BuildRequires:	autoconf
@@ -48,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 
 :> $RPM_BUILD_ROOT/var/games/moon-buggy/mbscore
 
+%{__rm} $RPM_BUILD_ROOT%{_infodir}/dir
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -60,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ANNOUNCE AUTHORS ChangeLog NEWS README TODO
-%attr(2755,root,games) %{_bindir}/*
+%attr(2755,root,games) %{_bindir}/moon-buggy
 %{_infodir}/*.info*
 %{_mandir}/man6/*
 %attr(775,root,games) %dir /var/games/moon-buggy
